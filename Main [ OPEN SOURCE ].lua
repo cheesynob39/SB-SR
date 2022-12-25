@@ -181,9 +181,14 @@ if game.CoreGui:FindFirstChild("CombatTab", 1) then
 			if L_2:IsA("TouchTransmitter") and L_2.Parent.Name == "Handle" and game.Players.LocalPlayer.Character.inMatch.Value == true then
 				lp.Character.Humanoid:EquipTool(L_2.Parent.Parent)
 			end
+			
 
 
 		end
+		
+		wait(.25)
+		
+		game.Players.LocalPlayer.Character.Humanoid:UnequipTools()
 
 		end)
 
@@ -348,6 +353,3 @@ end
 			return Matchmaking
 		
 		end
-
-
-
