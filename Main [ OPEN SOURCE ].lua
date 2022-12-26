@@ -300,7 +300,7 @@ if 20 > Magnitude then
 								local magnitude =
 								(L_8.Character.HumanoidRootPart.Position -
 								game.Players.LocalPlayer.Character.HumanoidRootPart.Position).Magnitude
-								if magnitude < 200 then
+								if magnitude < 20.01 then
 									game:GetService("ReplicatedStorage").Events.Slap:FireServer(L_8.Character.Torso)
 								end
 							end
@@ -314,9 +314,9 @@ if 20 > Magnitude then
 
 			Local1:CreateSlider(
 			"Walkspeed",
-			25,
+			20,
 			300,
-			25,
+			20,
 			false,
 			function(JP)
 				_G.settingsTable.Speed = JP
