@@ -295,8 +295,8 @@ if 20 > Magnitude then
 							if
 							L_8.Character:FindFirstChild("HumanoidRootPart") ~= nil and
 							L_8.Character:FindFirstChild("Humanoid") and
-							L_8.Character.Humanoid.Health > 0
-							then
+							L_8.Character.Humanoid.Health > 0 and game.Players.LocalPlayer.Character.Humanoid.Health > 0 then
+							
 								local magnitude =
 								(L_8.Character.HumanoidRootPart.Position -
 								game.Players.LocalPlayer.Character.HumanoidRootPart.Position).Magnitude
