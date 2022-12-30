@@ -20,8 +20,10 @@ if game.CoreGui:FindFirstChild("CombatTab", 1) then
     
     if getgenv().Running  then
         
-        print("Running Already...")
-        
+             
+		error("R2O Was Found Running")
+		
+		
         else
 
 	_G.settingsTable = {
@@ -282,12 +284,12 @@ if 20 > Magnitude then
 			end
 			)
 
-
+bo
 
 			CUMBAT3:CreateToggle(
 			"Slap Aura",
-			function(sexwithanakin)
-				getgenv().Aura = sexwithanakin
+			function(bool)
+				getgenv().Aura = bool
 				while getgenv().Aura == true do
 					wait(.005)
 					for _, L_8 in pairs(game.Players:GetPlayers()) do
@@ -295,7 +297,7 @@ if 20 > Magnitude then
 							if
 							L_8.Character:FindFirstChild("HumanoidRootPart") ~= nil and
 							L_8.Character:FindFirstChild("Humanoid") and
-							L_8.Character.Humanoid.Health > 0 and game.Players.LocalPlayer.Character.Humanoid.Health > 0 then
+							not L_8.Character:FindFirstChild("Dead")  and not game.Players.LocalPlayer.Character:FindFirstChild("Dead")  then
 							
 								local magnitude =
 								(L_8.Character.HumanoidRootPart.Position -
