@@ -238,7 +238,7 @@ if 20 > Magnitude then
 			wait(.1)
 			for _, L_6 in pairs(game:GetService("Players").LocalPlayer.Backpack:GetChildren()) do
 				if L_6:IsA("Tool") and L_6.Name == "Bomb" then
-					L_6.Parent = game.Players.LocalPlayer.Character
+					L_6.Parent = game.Players.LocalPlayer.Cfharacter
 				end
 			end
 			wait(.25)
@@ -284,7 +284,7 @@ if 20 > Magnitude then
 			end
 			)
 
-bo
+
 
 			CUMBAT3:CreateToggle(
 			"Slap Aura",
@@ -352,6 +352,6 @@ end
 
 		elseif game.PlaceId == 9426795465 then
 
-			return Matchmaking
+			error("Matchmaking")
 		
 		end
