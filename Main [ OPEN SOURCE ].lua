@@ -31,7 +31,7 @@ if game.CoreGui:FindFirstChild("CombatTab", 1) then
 
 		Speed = 25,
 
-		Jump = 50,
+		Jump = 50, 
 	}
 
 
