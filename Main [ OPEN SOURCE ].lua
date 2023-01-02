@@ -342,6 +342,8 @@ if 20 > Magnitude then
 			end
 			)
 
+		
+		game:GetService("SoundService").KillSound.SoundId = "rbxassetid://2440889605"
 
 
 			print("R2O Took " .. tick() - Time .. " Seconds To Load ")
