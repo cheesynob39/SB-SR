@@ -238,7 +238,7 @@ if 20 > Magnitude then
 			wait(.1)
 			for _, L_6 in pairs(game:GetService("Players").LocalPlayer.Backpack:GetChildren()) do
 				if L_6:IsA("Tool") and L_6.Name == "Bomb" then
-					L_6.Parent = game.Players.LocalPlayer.Cfharacter
+					L_6.Parent = game.Players.LocalPlayer.Character
 				end
 			end
 			wait(.25)
