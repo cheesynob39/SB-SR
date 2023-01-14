@@ -1,11 +1,8 @@
-repeat task.wait(.25)
-
-
+repeat 
+    
+    wait(.25)
 
 until game:IsLoaded()
-
-
-
 
 
 if game.PlaceId == 9431156611 then
@@ -383,7 +380,7 @@ if 20 > Magnitude then
 		game:GetService("SoundService").KillSound.SoundId = "rbxassetid://2440889605"
 
 
-			print("R2O Took " .. tick() - Time .. " Seconds To Load ")
+			print("R2O v1.23 Took " .. tick() - Time .. " Seconds To Load ")
 
 
 
@@ -393,8 +390,8 @@ end
 
 			print("Matchmaking")
 			
-		elseif not game.PlaceId == 9426795465 and not game.PlaceId == 9431156611 then
-		    
+		elseif game.PlaceId == 6403373529 then
+        
 		    game.TeleportService:Teleport(9426795465)
 		
 		end
