@@ -261,9 +261,7 @@ task.wait(.4)
 			local lp = game.Players.LocalPlayer
 			for _, L_5 in ipairs(game.Workspace:GetDescendants()) do
 				if L_5:IsA("TouchTransmitter") and L_5.Parent.Name == "Handle" and L_5.Parent.Parent.Name == "Bomb" and workspace:FindFirstChild("BusModel") then
-					local Magnitude = (lp.Character.HumanoidRootPart.Position - workspace.BusModel.Position).Magnitude
-if 20 > Magnitude then 
-    
+
     
     
 					lp.Character.Humanoid:EquipTool(L_5.Parent.Parent)
@@ -281,7 +279,7 @@ if 20 > Magnitude then
 					L_7:Activate()
 				end
 			end
-			end
+			
 	end
 		)
 
