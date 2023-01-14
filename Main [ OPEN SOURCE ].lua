@@ -47,7 +47,7 @@ if game.CoreGui:FindFirstChild("CombatTab", 1) then
 
 
 
-	local GaySexWithBori =
+	local Coasting =
 	loadstring(game:HttpGet(("https://raw.githubusercontent.com/cheesynob39/Coasting/main/Source.lua")))()
 
 	local namecall
@@ -79,7 +79,7 @@ if game.CoreGui:FindFirstChild("CombatTab", 1) then
 
 
 
-	local CUMBAT = GaySexWithBori:CreateTab("Combat")
+	local CUMBAT = Coasting:CreateTab("Combat")
 
 	local CUMBAT3 = CUMBAT:CreateSection("Slaps")
 
@@ -87,7 +87,7 @@ if game.CoreGui:FindFirstChild("CombatTab", 1) then
 
 	--------------------------------------------
 
-	local MISCUM = GaySexWithBori:CreateTab("Misc")
+	local MISCUM = Coasting:CreateTab("Misc")
 
 	local MISCUM2 = MISCUM:CreateSection("Badges")
 
@@ -95,7 +95,7 @@ if game.CoreGui:FindFirstChild("CombatTab", 1) then
 
 	--------------------------------------------
 
-	local Game = GaySexWithBori:CreateTab("Game")
+	local Game = Coasting:CreateTab("Game")
 
 	local Game1 = Game:CreateSection("Settings")
 
@@ -103,7 +103,7 @@ if game.CoreGui:FindFirstChild("CombatTab", 1) then
 
 	--------------------------------------------
 
-	local Local = GaySexWithBori:CreateTab("Local")
+	local Local = Coasting:CreateTab("Local")
 
 	local Local1 = Local:CreateSection("WS")
 
@@ -126,50 +126,84 @@ if game.CoreGui:FindFirstChild("CombatTab", 1) then
 
 
 	MISCUM2:CreateButton(
-	"Get Lab Code",
+	"Get Chain",
 	function()
 		function code(decal)
-			if decal == "http://www.roblox.com/asset/?id=9648769161" then
-				return 4
-			elseif decal == "http://www.roblox.com/asset/?id=9648765536" then
-				return 2
-			elseif decal == "http://www.roblox.com/asset/?id=9648762863" then
-				return 3
-			elseif decal == "http://www.roblox.com/asset/?id=9648759883" then
-				return 9
-			elseif decal == "http://www.roblox.com/asset/?id=9648755440" then
-				return 8
-			elseif decal == "http://www.roblox.com/asset/?id=9648752438" then
-				return 2
-			elseif decal == "http://www.roblox.com/asset/?id=9648749145" then
-				return 8
-			elseif decal == "http://www.roblox.com/asset/?id=9648745618" then
-				return 3
-			elseif decal == "http://www.roblox.com/asset/?id=9648742013" then
-				return 7
-			elseif decal == "http://www.roblox.com/asset/?id=9648738553" then
-				return 8
-			elseif decal == "http://www.roblox.com/asset/?id=9648734698" then
-				return 2
-			elseif decal == "http://www.roblox.com/asset/?id=9648730082" then
-				return 6
-			elseif decal == "http://www.roblox.com/asset/?id=9648723237" then
-				return 3
-			elseif decal == "http://www.roblox.com/asset/?id=9648718450" then
-				return 6
-			elseif decal == "http://www.roblox.com/asset/?id=9648715920" then
-				return 6
-			elseif decal == "http://www.roblox.com/asset/?id=9648712563" then
-				return 2
-			end
-		end
+    if decal == "http://www.roblox.com/asset/?id=9648769161" then
+        return "4"
+    elseif decal == "http://www.roblox.com/asset/?id=9648765536" then
+        return "2"
+    elseif decal == "http://www.roblox.com/asset/?id=9648762863" then
+        return "3"
+    elseif decal == "http://www.roblox.com/asset/?id=9648759883" then
+        return "9"
+    elseif decal == "http://www.roblox.com/asset/?id=9648755440" then
+        return "8"
+    elseif decal == "http://www.roblox.com/asset/?id=9648752438" then
+        return "2"
+    elseif decal == "http://www.roblox.com/asset/?id=9648749145" then
+        return "8"
+    elseif decal == "http://www.roblox.com/asset/?id=9648745618" then
+        return "3"
+    elseif decal == "http://www.roblox.com/asset/?id=9648742013" then
+        return "7"
+    elseif decal == "http://www.roblox.com/asset/?id=9648738553" then
+        return "8"
+    elseif decal == "http://www.roblox.com/asset/?id=9648734698" then
+        return "2"
+    elseif decal == "http://www.roblox.com/asset/?id=9648730082" then
+        return "6"
+    elseif decal == "http://www.roblox.com/asset/?id=9648723237" then
+        return "3"
+    elseif decal == "http://www.roblox.com/asset/?id=9648718450" then
+        return "6"
+    elseif decal == "http://www.roblox.com/asset/?id=9648715920" then
+        return "6"
+    elseif decal == "http://www.roblox.com/asset/?id=9648712563" then
+        return "2"
+    end
+end
 
-		for _, L_1 in ipairs(game:GetService("Workspace").Map.CodeBrick.SurfaceGui:GetDescendants()) do
-			if L_1.Name == "IMGTemplate" then
-				Code = code(tostring(L_1.Image))
-				warn(tostring(Code))
-			end
-		end
+
+
+
+for i,v in ipairs(game:GetService("Workspace").Map:WaitForChild("CodeBrick"):WaitForChild("SurfaceGui"):GetDescendants()) do
+    if v.Name == 'IMGTemplate' then
+local Code = code(tostring(v.Image))
+
+if 0 < #game:GetService("Workspace").Map:WaitForChild("OriginOffice").Door.Keypad.Display.SurfaceGui.TextLabel.Text then
+    
+    fireclickdetector(game:GetService("Workspace").Map:WaitForChild("OriginOffice").Door.Keypad.Buttons.Reset.ClickDetector)
+
+end
+
+        task.wait(.2)
+        
+        
+
+
+    
+    
+
+
+  fireclickdetector(game:GetService("Workspace").Map:WaitForChild("OriginOffice").Door.Keypad.Buttons[Code].ClickDetector)
+  
+  
+
+  
+
+
+
+end
+
+
+
+
+end
+
+task.wait(.4)
+  fireclickdetector(game:GetService("Workspace").Map:WaitForChild("OriginOffice").Door.Keypad.Buttons.Enter.ClickDetector)
+
 	end
 	)
 
