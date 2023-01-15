@@ -169,6 +169,8 @@ for i,v in ipairs(game:GetService("Workspace").Map:WaitForChild("CodeBrick"):Wai
     end
 end
 
+task.wait(.2)
+
 fireclickdetector(game:GetService("Workspace").Map:WaitForChild("OriginOffice").Door.Keypad.Buttons.Enter.ClickDetector)
 
     end)
