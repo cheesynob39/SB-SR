@@ -33,9 +33,9 @@ if game.CoreGui:FindFirstChild("CombatTab", 1) then
 
 	_G.settingsTable = {
 
-		Speed = 25,
+		Speed = 20.554494,
 
-		Jump = 50, 
+		Jump = 50.554494, 
     
 	}
 
@@ -308,7 +308,7 @@ fireclickdetector(game:GetService("Workspace").Map:WaitForChild("OriginOffice").
 	
     _G.settingsTable.Speed = JP
 	
-    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = _G.settingsTable.Speed
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = _G.settingsTable.Speed + 0.554494
    
     end)
 
