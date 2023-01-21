@@ -4,6 +4,12 @@ if not game:IsLoaded() then
 
 end
 
+local PlaceIds = {
+    
+    9431156611, 
+    9426795465
+}
+
 if game.PlaceId == 9431156611 then 
 
 if game.CoreGui:FindFirstChild("CombatTab", 1) then 
@@ -135,6 +141,14 @@ local Items = {
 	local Local2 = Local:CreateSection("JP")
 
 	--------------------------------------------
+	
+	local Credits = Coasting:CreateTab("Credits")
+
+	local Creators = Credits:CreateSection("Creators")
+
+	local Discord = Credits:CreateSection("Discord")
+
+        --------------------------------------------
 
 	Game2:CreateButton("Anti Acid", function()
 		
@@ -305,8 +319,26 @@ fireclickdetector(game:GetService("Workspace").Map:WaitForChild("OriginOffice").
         game.Players.LocalPlayer.Character.Humanoid.JumpPower = _G.settingsTable.Jump
         
     end)
+	
+   
+   Creators:CreateButton("Anakin#3568",function()
+       
+       setclipboard("Anakin#3568")
+       
+   end)
+   
+   Creators:CreateButton("RealIced#0001",function()
+       
+       setclipboard("RealIced#0001")
+       
+   end)
 
-
+   
+   Discord:CreateButton("Copy Invite",function()
+       
+       setclipboard("https://discord.gg/zty372wma5")
+       
+   end)
 
 
 		
@@ -323,7 +355,7 @@ elseif game.PlaceId == 9426795465 then
     
     print("Matchmaking")
     
-elseif game.PlaceId == 6403373529 then
+elseif game.PlaceId ~= PlaceIds then
     
     game.TeleportService:Teleport(9426795465)
     
