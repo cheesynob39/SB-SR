@@ -355,8 +355,4 @@ elseif game.PlaceId == 9426795465 then
     
     print("Matchmaking")
     
-elseif game.PlaceId ~= PlaceIds then
-    
-    game.TeleportService:Teleport(9426795465)
-    
 end
