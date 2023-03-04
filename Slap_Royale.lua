@@ -286,7 +286,7 @@ fireclickdetector(game:GetService("Workspace").Map:WaitForChild("OriginOffice").
     CUMBAT3:CreateToggle("Slap Aura",function(bool)
 				getgenv().Aura = bool
 				while getgenv().Aura == true do
-					wait(.005)
+					task.wait()
 					for _, L_8 in pairs(game.Players:GetPlayers()) do
 						if L_8 ~= game.Players.LocalPlayer then
 							if L_8.Character:FindFirstChild("HumanoidRootPart") ~= nil and L_8.Character:FindFirstChild("Humanoid") and not L_8.Character:FindFirstChild("Dead")  and not game.Players.LocalPlayer.Character:FindFirstChild("Dead")  then
