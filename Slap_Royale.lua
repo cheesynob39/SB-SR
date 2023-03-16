@@ -189,20 +189,42 @@ fireclickdetector(game:GetService("Workspace").Map:WaitForChild("OriginOffice").
 
     end)
 
-    MISCUM3:CreateButton("Get All Items", function()
-        local Lplr = game.Players.LocalPlayer
-        if Lplr.Character.inMatch.Value and workspace:FindFirstChildWhichIsA("Tool") then
-            for _, Items in ipairs(game.Workspace:GetDescendants()) do
-                if Items:IsA("TouchTransmitter") and Items.Parent.Name == "Handle" then
-                    Lplr.Character.Humanoid:EquipTool(Items.Parent.Parent)
+    MISCUM3:CreateButton("Get All Items", function(Grab)
+        _G.settingsTable.GrabItems = Grab    
+
+               while _G.settingsTable.GrabItems do
+
+                wait(.1)
+
+                if workspace[game.Players.LocalPlayer.Name].inMatch.Value == true then
+
+                    wait(0.1)
+
+            local lp = game.Players.LocalPlayer
+
+            for i, v in ipairs(game.Workspace:GetDescendants()) do
+
+                if v:IsA("TouchTransmitter") and v.Parent.Name == "Handle" then
+
+                    lp.Character.Humanoid:EquipTool(v.Parent.Parent)
+
                 end
-            end
-            Lplr.Character.Humanoid:UnequipTools()
-            
-            else
+
                 
-                print("No Items")
-        end
+
+                
+
+                end
+
+                end
+
+               end
+
+    
+
+               
+
+    end
     end)
 
 
